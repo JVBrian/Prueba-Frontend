@@ -96,6 +96,7 @@ input:focus {
 svg {
   fill: white;
 }
+
 svg:hover {
   cursor: pointer;
   fill: #2acfcf;
@@ -293,7 +294,6 @@ svg:hover {
   color: var(--Gray);
 }
 
-
 .cards-Box {
   margin-top: 9rem;
   display: flex;
@@ -349,9 +349,88 @@ svg:hover {
   height: 0.84rem;
   width: 70%;
 }
+
 @media screen and (max-width: 1300px) {
   .center-line {
     height: 12.6rem;
     width: 2.8rem;
   }
+}
+
+.banner-content {
+  background-image: url("../img/bg-boost-desktop.svg");
+  background-color: var(--Dark-Violet);
+  text-align: center;
+  font-weight: 700;
+  color: white;
+  padding-bottom: 7.5rem;
+}
+
+.banner-content h1 {
+  font-size: 3.74rem;
+  padding-top: 5rem;
+  padding-bottom: 2.5rem;
+}
+
+.banner-content span {
+  font-size: 1.76rem;
+}
+
+/*   Footer   */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 6rem;
+  margin-top: 0;
+  padding-bottom: 6rem;
+  color: white;
+  background-color: var(--Very-Dark-Blue);
+}
+
+.footer .brand {
+  flex: 3;
+}
+
+.ul-list {
+  flex: 4;
+  margin-left: -7.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.23rem;
+}
+
+.ul-list ul {
+  margin-left: 7.84rem;
+}
+
+.ul-list ul li {
+  line-height: 3.15rem;
+  color: #bfbfbf;
+}
+
+.ul-list ul li:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+
+.ul-list ul h4 {
+  font-size: 1.35rem;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.social-icons {
+  margin-top: -0.125rem;
+  margin-left: 8rem;
+  flex: 2;
+}
+
+.social-icons ul {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons ul li {
+  margin: 0 1.1rem;
 }
