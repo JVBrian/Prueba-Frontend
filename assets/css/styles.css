@@ -19,6 +19,7 @@
   --Color-Blue-Shadow: #004fbc;
   --Cyan-Light: #7ce4e4;
   --Cyan-Light-Alt: #b2d2ff;
+  --line-Color: #f4f4f6;
 }
 
 /*   Estilos generales   */
@@ -90,6 +91,14 @@ input:focus {
   img {
     width: 15px;
   }
+}
+
+svg {
+  fill: white;
+}
+svg:hover {
+  cursor: pointer;
+  fill: #2acfcf;
 }
 
 /*   Navbar   */
@@ -220,8 +229,14 @@ input:focus {
 }
 
 /*   Main   */
+.linecolor {
+  background-color: var(--line-Color);
+  z-index: 11;
+  position: relative;
+}
+
 .shorten-link {
-  background-color: #3b3054;
+  background-color: var(--Very-Dark-Blue);
   background-image: url("/assets/img/bg-shorten-desktop.svg");
   position: relative;
   top: -8.5rem;
@@ -237,7 +252,7 @@ input:focus {
 
 .shorten-link input {
   flex: 5;
-  color: #35323e;
+  color: var(--Dark-Violet);
 }
 
 .shorten-link span {
@@ -261,4 +276,82 @@ input:focus {
   padding: 5rem 18rem 5rem 5rem;
   width: 100%;
   height: 17rem;
+}
+
+.body-Box-Fixed {
+  margin: 0 27rem;
+  text-align: center;
+}
+
+.body-Box-Fixed h1 {
+  font-size: 3.96rem;
+  color: var(--Very-Dark-Blue);
+}
+
+.body-Box-Fixed p {
+  line-height: 3.2rem;
+  color: var(--Gray);
+}
+
+
+.cards-Box {
+  margin-top: 9rem;
+  display: flex;
+}
+
+.card {
+  border-radius: 0.7rem;
+  margin: 0 1.4rem;
+  max-width: 50rem;
+  background-color: white;
+}
+.card .logo {
+  background-color: var(--Dark-Violet);
+  padding: 2.1rem;
+  border-radius: 100%;
+  margin: -4.5rem 0 -1rem 3.2rem;
+}
+.card-Body {
+  padding: 3.22rem;
+}
+.card-Body h2 {
+  color: var(--Very-Dark-Blue);
+  margin-bottom: 2rem;
+}
+.card-Body p {
+  color: var(--Grayish-Violet);
+  font-size: 1.413rem;
+  line-height: 2.52rem;
+  font-weight: 500;
+}
+
+.Card-One {
+  margin-top: 1.2rem;
+  margin-bottom: 21rem;
+}
+
+.Card-Two {
+  margin-top: 5.8rem;
+  margin-bottom: 16.2rem;
+}
+
+.Card-Three {
+  margin-top: 10rem;
+  margin-bottom: 12rem;
+}
+
+.center-line {
+  position: relative;
+  top: 25.5rem;
+  left: 20rem;
+  z-index: -1;
+  background-color: var(--Cyan);
+  height: 0.84rem;
+  width: 70%;
+}
+@media screen and (max-width: 1300px) {
+  .center-line {
+    height: 12.6rem;
+    width: 2.8rem;
+  }
 }
